@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero__section{
+    background-image: url(images/heroSectionBackground.png);
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 20px;
+}
+
+.user__icon{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero__section_logo{
+    width: 200px;
+    height: auto;
+}
+
+.hero__section_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero__section_input_container{
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.input_container_location, .input_container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.input_container_search {
+    width: 65%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .user__icon {
+        display: flex;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .hero__section {
+        min-height: 80vh;
+    }
+
+        .hero__section_input_container{
+            flex-direction: column;
+            background-color: transparent;
+            width: 90%;
+        }
+        .input_container_location,
+        .input_container_search {
+            padding: 15px;
+            width: 95%;
+            border-radius: 10px;
+        }
+
+    .hero__section_title {
+        font-size: 20px;
+    }
+}
