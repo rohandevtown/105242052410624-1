@@ -249,3 +249,183 @@
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+.get__the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    /* background-color: red; */
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.semiConatiner{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.left{
+    flex: 2;
+}
+
+.left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.radio__buttons_conatiner{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radio__buttons_conatiner div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.radio__buttons_conatiner div input{
+    accent-color: rgb(239, 79, 95);
+    height: 15px;
+    width: 15px;
+}
+
+.input_conatiner{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.input_conatiner input{
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input_conatiner button{
+    border: none;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input_conatiner button , .input_conatiner input {
+    padding: 10px 12px;
+}
+
+.download__app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.download__app_container h5{
+    color: gray;
+    font-weight: 400;
+}
+
+
+.download__app_container div{
+    display: flex;
+    gap: 1rem;
+}
+
+.download__app_container div img{
+    width: 35%;
+}
+
+@media only screen and (max-width: 1300px){
+    .left, .right{
+        flex: 1;
+    }
+    .semiConatiner{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .get__the_app{
+    padding: 2rem;
+  }
+
+    .semiConatiner {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .get__the_app {
+        padding: 3rem 0;
+    }
+
+    .semiConatiner {
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer_section1 img{
+    width: 120px;
+}
+
+.section1__buttonContainer{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.section1__buttonContainer button{
+    border: 1px solid gray;
+        background-color: transparent;
+        padding: 5px;
+        width: 90px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+}
